@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import pImg from '../public/b.png'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -8,9 +10,9 @@ export default function Home() {
     <main
       className={`flex min-h-screen min-w-[1300px] flex-col items-center justify-between p-24 ${inter.className} font-poppins`}>
       <div className= "bg-white rounded-xl shadow-2xl flex flex-r w-3/4  h-[564px]  ">
-      <div className="w-2/4 bg-scroll bg-[url('https://raw.githubusercontent.com/Devika-S-Kumar/Task1/main/public/b.png')] alt='...' h-[564px] rounded-l-xl">
-        
-      </div>
+      <div className="w-2/4 bg-scroll h-[564px] rounded-l-xl">
+        <Image src={pImg} alt='/' className='h-[564px] rounded-l-xl'/>
+    </div>
 
       <div className='w-2/4 p-10' >
         <h1 className='font-semibold text-2xl font-san text-neutral-800'>Login</h1>
